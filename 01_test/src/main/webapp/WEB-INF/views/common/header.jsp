@@ -8,23 +8,23 @@
   <title>BookStore Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="${contextPath}/resources/css/style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-gray-50 font-sans text-gray-900">
-  <header class="bg-white shadow-md fixed w-full z-50 py-4 px-6">
-    <div class="flex items-center justify-between">
-      <h1 class="text-xl font-bold text-[#4F5869]">인용문고 관리자페이지</h1>
-      <div class="flex items-center space-x-4">
-        <button class="text-gray-600">
-          <i class="fas fa-bell text-xl"></i>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="header-title">인용문고 관리자페이지</h1>
+      <div class="header-actions">
+        <button class="notification-btn">
+          <i class="fas fa-bell"></i>
         </button>
-        <div class="flex items-center space-x-2">
-          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" class="w-8 h-8 rounded-full">
-          <span class="text-[#4F5869]">Admin</span>
+        <div class="header-profile">
+          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="Admin Profile">
+          <span class="profile-name">Admin</span>
         </div>
       </div>
     </div>
   </header>
-  <div class="flex pt-[60px]">
+  <div class="main-content">
+    <div class="flex pt-[60px]">
