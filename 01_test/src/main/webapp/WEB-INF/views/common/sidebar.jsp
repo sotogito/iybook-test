@@ -1,21 +1,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
 <aside class="sidebar">
   <nav class="sidebar-nav">
-    <div class="sidebar-item">
-      <i class="fa-solid fa-bullhorn"></i><span>공지사항 관리</span>
-    </div>
-    <div class="sidebar-item">
-      <i class="fa-solid fa-box"></i><span>상품 관리</span>
-    </div>
-    <div class="sidebar-item">
-      <i class="fa-solid fa-calculator"></i><span>정산 관리</span>
-    </div>
-    <div class="sidebar-item">
-      <i class="fa-solid fa-chart-line"></i><span>통계</span>
-    </div>
-    <div class="sidebar-item active">
-      <i class="fa-solid fa-cart-shopping"></i><span>주문 관리</span>
-    </div>
+    <a href="${contextPath}/dashboard" class="sidebar-item">대시보드</a>
+    <a href="${contextPath}/product" class="sidebar-item">상품 관리</a>
+    <a href="${contextPath}/order" class="sidebar-item">주문 관리</a>
   </nav>
 </aside>
