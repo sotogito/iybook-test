@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="${contextPath}/resources/css/style.css">
 </head>
 <body>
-    <%@ include file="/WEB-INF/views/common/header.jsp" %>
+<%@ include file="/WEB-INF/views/common/header.jsp" %>
+<div class="layout">
     <%@ include file="/WEB-INF/views/common/sidebar.jsp" %>
-    
     <main class="content-area">
-        <h2>주문 관리 페이지입니다</h2>
+        <h2>대시보드 페이지입니다</h2>
+        <div class="order-list-container">
+            <h2>주문 관리 페이지입니다.</h2>
+        </div>
     </main>
-    
-    <%@ include file="/WEB-INF/views/common/footer.jsp" %>
+</div>
+<%@ include file="/WEB-INF/views/common/footer.jsp" %>
 </body>
+
 </html> 
